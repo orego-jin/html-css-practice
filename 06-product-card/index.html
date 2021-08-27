@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- 
+    - 별평점은 스타일적 요소이고 내용상 마크업할 요소는 아니지만 태그를 이용하는 것이 표현에 더 수월하므로 그렇게 함. 대신 브라우저에게 이것이 별 중요한
+      것이 아니라는 것을 'aria-hidden="true"'를 추가로 써서 나타내줌.
+    - 스타일(css)를 위해 img태그에 class를 주어야 할 때, img 태그 안에 주는 것이 아니라 img를 div에 담고 그 div에 클래스를 주었다.
+ -->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aba529b9a1.js" crossorigin="anonymous"></script>
+    <title>Product card</title>
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-card-image">
+            <img src="https://user-images.githubusercontent.com/19285811/69318246-becd7980-0c77-11ea-8324-6c43e2de8cf2.png" alt="">
+        </div>
+        <div class="product-card-title">
+            <h1>
+                혼자가 혼자에게
+            </h1>
+            <strong aria-label="오늘의 책 선정">
+                오늘의 책
+            </strong>
+        </div>
+        <strong class="product-card-author" aria-label="저자 이름">
+            이병률
+        </strong>
+        <strong class="product-card-review" aria-label="평점 9.4">
+            <span aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </span>
+            9.4
+        </strong>
+    </div>
+
+</body>
+</html>
