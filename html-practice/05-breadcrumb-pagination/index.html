@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- 
+- breadcrumb의 /는 의미를 전달하기보단 스타일적 요소이므로 css로 빼주었다 
+- pagination-> 아이템들이 병렬적으로 순서대로 나열되어 있다 -> ol
+- ... 는 button - disalbed 사용해 표현
+- WAI-ARIA: 
+	- UI에는 변화 없음. 스크린 리더로 읽힐 문장 적어줌. 
+	- aria-label="" 로 attribute으로 사용 - global attribute. 보이는 것과 스크린리더로 읽혀야 하는 것이 다를 경우 사용
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Breadcrumb&amp;Pagination</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="breadcrumb">
+		<h1>
+		<a href="https://github.com/orego-jin">
+			orego-jin
+		</a>
+		<a href="https://github.com/orego-jin/html-css-practice/tree/main">
+			html-css-practice
+		</a>
+		</h1>
+	</div>
+	<div class="pagination">
+		<a href="" aria-label="Go to Previous page" class="disabled">
+			Previous
+		</a>
+		<ol>
+			<li class="current-page">
+				<a href="" aria-label="Go to page 1">1</a>
+			</li>
+			<li>
+				<a href="" aria-label="Go to page 2">2</a>
+			</li>			
+			<li>
+				<a href="" aria-label="Go to page 3">3</a>
+			</li>			
+			<li>
+				<a href="" aria-label="Go to page 4">4</a>
+			</li>			
+			<li>
+				<a href="" aria-label="Go to page 5">5</a>
+			</li>			
+			<li>
+				<button type="button" disabled>...</button>
+			</li>			
+			<li>
+				<a href="" aria-label="Go to page 6">6</a>
+			</li>			
+			<li>
+				<a href="" aria-label="Go to page 7">7</a>
+			</li>
+			<li>
+				<a href="" aria-label="Go to page 8">8</a>
+			</li>
+		</ol>
+		
+		<a href="">
+			Next
+		</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 
+    - '무엇은 무엇이다'같은 형태의 정보 -> key-value꼴로 정보가 형성 -> definition list로 마크업! 
+    - definition list 의 key-value 보이는 순서는 나중에 css로 바꿀 수 있다. 의미상 key인걸 key로 해주기.
+    - 마크업 할 때는 정말 의미에 맞게 하는 것만 신경쓰고 자질구레한 것은 다 css로 할 수 있다.
+        (e.g. img보단 내용이 더 중요한 것 같으니 img가 먼저 보이지만 뒤에 위치시킴.. 대문자 소문자도 나중에 css로 바꿀 수 있다.)
+    - screen reader로 들으면서 사용하는 사람들 입장에서 보면서 어떤식으로 마크업하는 것이 정보를 더 논리적으로 전달하는 것인지 생각하며 html을 작성..
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram User Profile</title>
+</head>
+<body>
+<div class="user-profile">
+    <div class="user-profile-data">
+        <h1>
+            _orego.jin
+        </h1>
+        <dl>
+            <div>
+                <dt>Posts</dt>
+                <dd>112</dd>
+            </div>
+            <div>
+                <dt>Followers</dt>
+                <dd>274</dd>
+            </div>
+            <div>
+                <dt>Followings</dt>
+                <dd>238</dd>
+            </div>
+        </dl>
+        <h2>
+            우현
+        </h2>
+        <p>
+            #frontend #구독 #디지털노마드 🇰🇷🇯🇵🇳🇿🇨🇦🇨🇳🇩🇪🇮🇹🇨🇿🇦🇹🇵🇾🇧🇷🇺🇸🇬🇧🇮🇳🇹🇭🇹🇼🇻🇳🇲🇾🇸🇬🚩
+        </p>
+        <a href="">
+            youtubelink
+        </a>
+    </div>
+    <div class="user-profile-photo">
+        <img src="https://images.unsplash.com/photo-1572985025058-f27aeca1b8bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3151&q=80
+        " alt="">
+    </div>
+</div>
+
+
+
+</body>
+</html>
