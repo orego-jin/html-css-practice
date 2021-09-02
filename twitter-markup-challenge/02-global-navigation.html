@@ -1,0 +1,66 @@
+<!-- 
+    - nav: 
+        문서 간 이동할 수 있는 메뉴, 요소가 있는 경우 사용. 
+        Semantic element이므로 h태그 무조건!
+    - span, strong 태그: 나중에 css로 안보이게 처리해주면 된다.
+    - 누르면 어떤 작용? -> button
+ -->
+<nav>
+    <h2>Menu</h2>
+    <ul>
+        <li>
+            <a href="#">
+                <span>Current page</span>
+                <!-- Icon -->
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Explore
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <strong aria-label="5 unread Notifications">5</strong>
+                <!-- Icon -->
+                Notifications
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Message
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Bookmarks
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Lists
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <!-- Icon -->
+                Profile
+            </a>
+        </li>
+        <li>
+            <button type="button">
+                <!-- Icon -->
+                More
+            </button>
+            <!-- Dropdown Menu -->
+        </li>
+    </ul>
+    <button type="button">
+        Tweet
+    </button>
+</nav>

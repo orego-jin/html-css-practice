@@ -1,0 +1,45 @@
+<!-- 
+    -section: 논리적으로 완결된 집합체를 묶어줄 때 div대신 사용.
+    -form 에서 작성 내용이 많으면 GET보다는 POST.
+    -input type="file" 에서 multiple (attribute): 여러 파일 동시에 받을 수 있다.
+    -input type="file" 에서 accept(attribute) 값: 
+        image/* -> 이미지 파일 모두 허용.
+        image/.png, image/.jpg, .png, .jpg -> 특정 파일타입 허용.
+    -input은 css로 스타일이 안됨-> 스타일을 위해 버튼을 만들어서 넣어줌.
+ -->
+
+<section>
+    <h1>What's happening</h1>
+    <form action="#" method="POST">
+        <img src="#" alt="user profile image">
+        <textarea name="" id="" cols="30" rows="10" placeholder="What's happening" maxlength="280"></textarea>
+        <div>
+            <button type="button" aria-label="Upload files">
+                <!-- icon -->
+            </button>
+            <input type="file" multiple accept="image/*, video/*">
+     
+            <button type="button" aria-label="Search GIFs">
+                <!-- icon -->
+            </button>
+
+            <button type="button" aria-label="Create a poll">
+                <!-- icon -->
+            </button>
+ 
+            <button type="button" aria-label="choose emoji">
+                <!-- icon -->
+            </button>
+        </div>
+
+        <div>
+            <strong aria-label="0 out of 280 characters">
+
+            </strong>
+            <button type="button" aria-label="Add another tweet">
+                <!-- icon -->
+            </button>
+        </div>
+        <button type="submit">Tweet</button>
+    </form>
+</section>
