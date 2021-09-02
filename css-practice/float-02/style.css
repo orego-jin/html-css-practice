@@ -1,3 +1,15 @@
+/* 
+1. Size & spacing elements
+2. make img and content inline (float)
+
+- margin-bottom does not work for display:inline (strong - inline as default)
+- frequently used css rule -> make it a global(general) class and apply(add) the class to html (.clearfix)
+- float -> becomes 'block' element 
+- margin -> use either 'margin-top' or 'margin-bottom', but be consistent.
+- troubleshooting -> check one rule at a time - comment all and un-comment one by one and check which one does
+not work as intended.
+*/
+
 * {
     box-sizing: border-box;
     margin: 0;
