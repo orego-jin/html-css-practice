@@ -1,3 +1,16 @@
+/* 
+1. remove ul 's default css : list-style-type: none;
+2. allocate items in line : 
+    float: left;
+    .tab-menu::after
+
+- display: list-item -> same as 'block'
+- better give padding to 'a' tag than 'li': 사용성 높아짐
+- display: inline -> 
+    padding top/bottom, margin top/bottom unavailable -> 
+    a tag = display: inline; -> change it to display: block;
+*/
+
 * {
     box-sizing: border-box;
     margin: 0;
