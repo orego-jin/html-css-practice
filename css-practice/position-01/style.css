@@ -1,3 +1,13 @@
+/* 
+- position: absolue -> then, display value becomes 'block'
+- box-sizing: border-box -> width, height will include border
+- box-sizing: content -> width, height will not include border
+- image tag -> display value is 'inline' but width, height works. but it's always
+ a good practice to change it to 'block' if they need to be manged.
+ 
+*/
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +15,7 @@
   
 body {
     font-family: "Lato", sans-serif;
+    background-color: #000;
 }
   
 h1 {
@@ -14,30 +25,53 @@ h1 {
     color: #273444;
 }
 
+.user-card{
+    max-width: 240px;
+    background-color: #fff;
+    padding: 8px 12px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
 .user-photo {
-    margin: 8px 12px;
+    /* margin: 8px 12px; */
+    margin-right: 12px;
     position: relative;
     width: 40px;
     height: 40px;
 }
 
 .user-photo img {
+    display: block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
 .user-status{
+    /* display: block; */
+    width: 12px;
+    height: 12px;
+    background-color: #21D891;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2px;
+    right: -2px; 
+    border: 2px solid #fff;
+}
+
+/* .user-status{
     display: block;
     width: 8px;
     height: 8px;
     background-color: #21D891;
     border-radius: 50%;
+    box-sizing: content;
     position: absolute;
     bottom: 0;
     right: 0; 
-    border: 1.18px solid #fff;
-}
+    border: 2px solid #fff;
+} */
 
 .clearfix::after{
     content: '';
@@ -51,6 +85,7 @@ h1 {
 }
 
 .user-name {
-    margin-top: 16px;
-    margin-bottom: 16px;
+        /* margin-top: 16px;
+        margin-bottom: 16px; */
+        padding: 8px 0; 
 }
