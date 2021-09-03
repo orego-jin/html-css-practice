@@ -4,49 +4,49 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  font-family: "Nunito Sans", sans-serif;
-  color: #273444;
-  background-color: #000;
+    width: 100%;
+    height: 100vh;
+    font-family: "Nunito Sans", sans-serif;
+    color: #273444;
+    background-color: #000;
 }
 
 input:focus,
 input:active,
 button:focus,
 button:active {
-  box-shadow: none;
-  outline: none;
+    box-shadow: none;
+    outline: none;
 }
 
 .modal {
-  background-color: #fff;
-  width: 671px;
-  height: 216px;
-  text-align: center;
-  padding: 32px 40px;
-  position: relative;
+    background-color: #fff;
+    width: 671px;
+    height: 216px;
+    text-align: center;
+    padding: 32px 40px;
+    position: relative;
 }
 
 .modal-title {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.6666666667;
-  margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6666666667;
+    margin-bottom: 4px;
 }
 
 .modal-desc {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
 }
 
 .input-group input,
 .input-group button {
-  font-size: 14px;
-  font-family: "Nunito Sans", sans-serif;
-  line-height: 1.4285714286;
-  padding: 8px;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.4285714286;
+    padding: 8px;
 }
 
 .input-group input {
@@ -64,16 +64,16 @@ button:active {
 }
 
 .close-button {
-  width: 20px;
-  height: 20px;
-  border: none;
-  background-color: transparent;
-  background-image: url(./assets/icon-close.svg);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 12.17px;
-  right: 12.17px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url(./assets/icon-close.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12.17px;
+    right: 12.17px;
 }
 
