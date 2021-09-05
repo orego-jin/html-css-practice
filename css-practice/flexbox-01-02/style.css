@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: #E5E5E5;
+}
+
+.float-practice { 
+    display: flex;
+    align-items: flex-start;
+}
+
+.tab-menu-item a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* .tab-nav {
+    background-color: #fff;
+} */
+.tab-menu {
+  padding-left: 0;
+  border-bottom: 1px solid #e5eaef;
+  list-style-type: none;
+  background-color: #fff;
+}
+
+/* .tab-menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tab-menu-item {
+  float: left;
+  margin-right: 16px;
+}
+
+.tab-menu-item.active {
+  border-bottom: 2px solid #2860e1;
+}
+
+.tab-menu-item.active a {
+  font-weight: 500;
+  color: #2860e1;
+}
+
+.tab-menu-item:last-child {
+  margin-right: 0;
+}
+
+.tab-menu-item a {
+  display: block;
+  padding: 16px 20px;
+} */
+
+.tab-menu {
+    display: flex;
+    flex-direction: row;
+    width: 540px;
+}
+
+.tab-menu-item{
+    padding: 16px 20px;
+    margin-right: 16px;
+}
+
+.active {
+    color: #2860E1;
+    border-bottom: solid 2px #2860E1;
+}
+
+
+.card-content h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2d3d;
+  line-height: 1.25;
+}
+
+.card-content strong {
+  font-size: 14px;
+  font-weight: 400;
+  color: #afb3b9;
+  line-height: 1.4285714286;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #79818b;
+  line-height: 1.5;
+}
+
+/* 
+.card::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.card-user {
+  float: left;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card-content {
+  float: left;
+}
+
+.card-content h1 {
+  margin-bottom: 4px;
+}
+
+.card-content strong {
+  display: block;
+  margin-bottom: 12px;
+} */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px; */
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 40px;
+}
+
+.card-user {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-content h1 {
+    margin-bottom: 4px;
+}
+
+.card-content strong {
+    display: block;
+    margin-bottom: 12px;
+}
+
