@@ -62,7 +62,10 @@ body {
 
 .tab-menu {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* justify-content: flex-start; */
+    align-items: center;
     width: 540px;
 }
 
@@ -127,7 +130,7 @@ body {
 
 .card {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* margin: 20px; */
     padding: 20px;
     background-color: #fff;
