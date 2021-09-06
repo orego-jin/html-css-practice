@@ -1,5 +1,5 @@
 /* 
-Flexbox: 사고의 과정을 찬찬히 밟으면 손쉽게 요소 정리..!
+Flexbox: 사고의 과정만 찬찬히 밟으면 손쉽게 요소 정리..!
 */
 
 * {
@@ -50,7 +50,7 @@ body {
     align-items: center;
     padding: 32px 40px;
     width: 386px;
-    height: 304px;
+    /* height: 304px; */
     border-radius: 16px;
     background-color: #fff;
 }
