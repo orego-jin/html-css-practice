@@ -1,3 +1,7 @@
+/* 
+Flexbox: 사고의 과정을 찬찬히 밟으면 손쉽게 요소 정리..!
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +11,11 @@ body {
   font-family: "Muli", sans-serif;
   color: #273444;
   background-color: #000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-name {
@@ -47,6 +56,7 @@ body {
 }
 
 .profile-image {
+    display: block;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -63,14 +73,17 @@ body {
 
 .profile-detail {
     display: flex;
-    width: 306px;
+    /* width: 306px; */
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
-.profile-detail-item {
+/* .profile-detail-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} */
 
-}
