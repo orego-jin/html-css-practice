@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    letter-spacing: -0.02em;
+    margin: 106px 100px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+.typography {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 1271px;
+    height: 1086px; */
+}
+
+dl > div {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-bottom: 64px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: -0.05%;
+    margin-bottom: 32px;
+}
+
+dt {
+    font-size: 12px;
+    font-weight: 600;
+    /* line-height: 16px; */
+    letter-spacing: -0.15%;
+    margin-right: 40px;
+    width: 46px;
+    color: #000;
+}
+
+dd {
+    text-align: left;
+}
+
+.fs {
+    margin-right: 50px;
+    /* width: 446px; */
+    font-weight: 400;
+    /* line-height: 24px; */
+    letter-spacing: -0.015%;
+}
+
+.fc {
+    margin-right: 300px;
+    /* width: 256px; */
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015%;
+    font-size: 16px;
+}
+
+.fw {
+    /* font-weight: 400; */
+    line-height: 24px;
+    letter-spacing: -0.015%;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.fs-tiny {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 25px;
+}
+
+.fs-small {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.fs-base {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.fs-medium {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.fs-large {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.fs-h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.fs-h1 {
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 25px;
+}
+
+.fc-dark {
+    color: #1F2D3D;
+    margin-bottom: 25px;
+}
+
+.fc-primary {
+    color: ##3C4858;
+    margin-bottom: 25px;
+}
+
+.fc-secondary {
+    color: #8492A6;
+    margin-bottom: 25px;
+}
+
+.fc-tertiary {
+    color: #C0CCDA;
+    margin-bottom: 25px;
+}
+
+.fc-white dd{
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 25px;
+}
+
+.fc-success {
+    color: #13CE66;
+    margin-bottom: 25px;
+}
+
+.fc-error {
+    color: #FF5216;
+    margin-bottom: 25px;
+}
+
+.fc-info {
+    color: #009EEB;
+    margin-bottom: 25px;
+}
+
+.fw-light dd {
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.fw-regular dd {
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.fw-medium dd {
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.fw-bold dd {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.link {
+    margin: 40px;
+}
+
+.link a {
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    color: black;
+    background-color: antiquewhite;
+}
