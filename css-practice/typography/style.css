@@ -7,11 +7,17 @@ body {
     letter-spacing: -0.02em;
     margin: 106px 100px;
     font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
 }
 
 section {
     margin-bottom: 80px;
+}
+
+.content {
+    width: 100%;
+    max-width: 736px;
+    margin: 0 auto;
+    padding: 48px;
 }
 
 .typography {
@@ -28,7 +34,10 @@ dl > div {
 }
 
 h1 {
-    margin-bottom: 64px;
+    margin-bottom: 48px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 59px;
 }
 
 h2 {
@@ -36,6 +45,14 @@ h2 {
     font-weight: 800;
     line-height: 21px;
     letter-spacing: -0.05%;
+    margin-bottom: 24px;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+p {
     margin-bottom: 32px;
 }
 
@@ -58,7 +75,7 @@ dd {
     /* width: 446px; */
     font-weight: 400;
     /* line-height: 24px; */
-    letter-spacing: -0.015%;
+    letter-spacing: -0.015em;
 }
 
 .fc {
@@ -73,116 +90,103 @@ dd {
 .fw {
     /* font-weight: 400; */
     line-height: 24px;
-    letter-spacing: -0.015%;
+    letter-spacing: -0.015em;
     font-size: 16px;
     margin-bottom: 0;
 }
 
+dd, dt {
+    margin-bottom: 25px;
+}
+
 .fs-tiny {
     font-size: 12px;
-    line-height: 16px;
-    margin-bottom: 25px;
+    /* line-height: 16px; */
+    line-height: 1.333333; /* 16/12 = 1.333333em*/
+    /* letter-spacing: -0.015em; */
 }
 
 .fs-small {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 25px;
 }
 
 .fs-base {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 25px;
 }
 
 .fs-medium {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 25px;
 }
 
 .fs-large {
     font-size: 20px;
-    line-height: 32px;
-    margin-bottom: 25px;
+    line-height: 32px;    
 }
 
 .fs-h2 {
     font-size: 28px;
     line-height: 40px;
-    margin-bottom: 25px;
 }
 
 .fs-h1 {
     font-size: 34px;
     line-height: 48px;
-    margin-bottom: 25px;
 }
 
 .fc-dark {
     color: #1F2D3D;
-    margin-bottom: 25px;
 }
 
 .fc-primary {
     color: ##3C4858;
-    margin-bottom: 25px;
 }
 
 .fc-secondary {
     color: #8492A6;
-    margin-bottom: 25px;
 }
 
 .fc-tertiary {
     color: #C0CCDA;
-    margin-bottom: 25px;
 }
 
 .fc-white dd{
     color: #fff;
-    background-color: #000;
-    margin-bottom: 25px;
+    background-color: #000;    
 }
 
 .fc-success {
     color: #13CE66;
-    margin-bottom: 25px;
 }
 
 .fc-error {
     color: #FF5216;
-    margin-bottom: 25px;
 }
 
 .fc-info {
     color: #009EEB;
-    margin-bottom: 25px;
 }
 
-.fw-light dd {
+.fw-light {
     font-weight: 300;
-    margin-bottom: 25px;
 }
 
-.fw-regular dd {
+.fw-regular {
     font-weight: 400;
-    margin-bottom: 25px;
 }
 
-.fw-medium dd {
+.fw-medium {
     font-weight: 500;
-    margin-bottom: 25px;
 }
 
-.fw-bold dd {
+.fw-bold {
     font-weight: 700;
-    margin-bottom: 25px;
 }
 
 .link {
-    margin: 40px;
+    margin: 30px 100px;
 }
 
 .link a {
@@ -192,4 +196,5 @@ dd {
     border-radius: 16px;
     color: black;
     background-color: antiquewhite;
+    
 }
