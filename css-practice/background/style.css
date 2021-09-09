@@ -8,6 +8,15 @@ body {
     background-color: #000;
 }
 
+.sr-only {
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
 .card {
     display: flex;
     padding: 24px;
@@ -20,75 +29,91 @@ body {
     width: 300px;
     height: 200px;
     margin-right: 24px;
-    background-image: url(./assets/img-house.jpg);
+    background-image: url('./assets/img-house.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 6px;
+    position: relative;
 }
 
-.like-button {
+.card-content {
+    flex-grow: 1;
+}
+
+.card-image .like-button {
     width: 36px;
     height: 36px;
+    /* background-size: 21px auto; */
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
     background-image: url(./assets/icon-favorite.svg);
     background-repeat: no-repeat;
-    /* background-size: 21px auto; */
     background-position: center center;
-    border-radius: 50%;
-    border: none;
-    margin: 12px;
+    background-size: 24px 24px;
+    /* margin: 12px; */
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 .plus-badge {
+    display: inline-block;
     background-color: #92174D;
     color: #fff;
     border-radius: 4px;
     text-transform: uppercase;
     padding: 1px 8px;
     margin-right: 8px;
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
     font-weight: 500;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.428571428571429;
 }
 
 .property-type span {
     color: #7D858F;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
 }
 
 .property-rate {
-    display: flex;
-    position: absolute;
-    right: 24px;
+    /* display: flex; */
+    /* position: absolute;
+    right: 24px; */
+    font-size: 16px;
+    line-height: 1.25;
 }
 
 .property-rate span {
     color: #7D858F;
-    font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
 }
 
 .property-rate strong {
-    font-size: 16px;
+    color: #151B26;
     font-weight: 400;
-    line-height: 20px;
 }
 
 .property-rate::before {
     content: "";
-    display: block;
+    display: inline-block; /*width, height 사이즈를 잡아주어야 하므로, block도 괜츈*/
+    position: relative;
+    top: 1px;
     width: 16px;
     height: 16px;
-    background-image: url(./assets/icon-star.svg);
+    background-image: url('./assets/icon-star.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -97,31 +122,27 @@ body {
 .card-title {
     font-size:20px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 1.6;
     margin-bottom: 16px;
 }
 
 .property-detail {
-    font-weight: 400x;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.142857142857143;
+    font-weight: 400x;
     color: #7D858F;
 }
 
-
-.property-detail div {
+.property-detail div:first-child {
     margin-bottom: 8px;
 }
 
-.property-detail span::after {
+.property-detail dd span::after {
     content: "\00B7";
-    margin-left: 6px;
-    margin-right: 2px;
+    margin:0 6px;
 }
-.property-detail span:last-child::after {
+.property-detail dd span:last-child::after {
     content: '';
+    margin: 0;
 }
 
-.sr-only {
-    display: none;
-}
