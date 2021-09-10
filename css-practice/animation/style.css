@@ -6,13 +6,19 @@
 body {
     font-family: 'Mulish', sans-serif;
     height: 100vh;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: #E5EAEF;
 }
 
 .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 216px;
     padding: 80px 100px;
     background-color: #fff;
 }
@@ -24,6 +30,10 @@ body {
     color: #151B26;
     text-align: center;
     margin-bottom: 20px;
+    animation: flicker;
+    animation-duration: 1600ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .progress-bar {
@@ -31,24 +41,47 @@ body {
     height: 12px;
     background-color: #E5EAEF;
     border-radius: 100px;
+    position: relative;
+    overflow: hidden;
 }
 
 .progress-bar-gauge {
-    display: block;
-    height: 100%;
+    /* display: block; */
+    position: absolute;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 0;
+    background-color: #13CE66;
     border-radius: 100px;
-    animation: gauge;
-    animation-duration: 3s;
-    animation-iteration-count: 3;
+    animation: loading-bar;
+    animation-duration: 1600ms;
+    animation-iteration-count: infinite;
 }
 
-@keyframes gauge {
-    from {
-        background-color: #13CE66;
+@keyframes loading-bar {
+    0% {
+        /* background-color: #13CE66; */
         width: 0;
+        opacity: 1;
+    }
+    80% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        /* background-color: #13CE66; */
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
     }
     to {
-        background-color: #13CE66;
-        width: 100%;
+        opacity: 0;
     }
 }
