@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5EAEF;
+}
+
+.loading {
+    padding: 80px 100px;
+    background-color: #fff;
+}
+
+.loading-title {
+    font-size: 18px;
+    line-height: 1.333333333333333;
+    font-weight: 400;
+    color: #151B26;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 12px;
+    background-color: #E5EAEF;
+    border-radius: 100px;
+}
+
+.progress-bar-gauge {
+    display: block;
+    height: 100%;
+    border-radius: 100px;
+    animation: gauge;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes gauge {
+    from {
+        background-color: #13CE66;
+        width: 0;
+    }
+    to {
+        background-color: #13CE66;
+        width: 100%;
+    }
+}
