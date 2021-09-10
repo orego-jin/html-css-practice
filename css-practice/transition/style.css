@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+button,
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+.line-button {
+    /* outline: none; */
+    /* border: none; */
+    position: relative;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #151B26;
+    padding: 18px 30px;
+    /* background-color: #fff; */
+    cursor: pointer;
+    transition: border-bottom 1ms;
+}
+
+.line-button::after {
+    content: '';
+    position: absolute;
+    /* display: block; */
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0066ff;
+    transition: width 250ms ease-in;
+}
+
+
+.line-button:hover::after {   /*line-button이 hover되었을 때 가상요소는*/
+    width: 100%;
+}
+
