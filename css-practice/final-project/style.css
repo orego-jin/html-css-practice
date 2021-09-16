@@ -113,27 +113,21 @@ p {
 /* Service */
 .service {
   background-color: #F4F5F7;
+  padding: 80px 0;
 }
 
-.service-page {
-  width: 100%;
-  height: 100vh;
-  padding: 120px 0;
-}
-
-.service-content:first-child {
+.service .col-12:first-child {
   margin-bottom: 40px;
 }
 
 .service-title {
-  color: #2B292D;
+  margin-bottom: 16px;
   font-size: 22px;
   line-height: 1.3636363636;
   letter-spacing: -0.04em;
   font-weight: 700;
-  margin-bottom: 16px;
+  color: #2B292D;
 }
-
 
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
@@ -171,32 +165,20 @@ p {
   }
 
   /* Service */
-  .service-page {
-    height: auto;
-    width: 100%;
-    padding: 80px 0px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .service-page .service-content .service-title {
+  .service-title {
     font-size: 26px;
     line-height: 1.3076923077;
-    
-  }
-  .service-content:first-child {
-    margin-right: 110px;
-    width: 370px;
+  } 
+
+  .service .col-12:first-child {
+    margin-bottom: 0;
   }
 
-  .service-content:last-child {
-    width: 450px;
-  }
 }
 
 /* Custom Grid System - Fix container width */
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 960px;
+    max-width: 960px !important;
   }
 }
