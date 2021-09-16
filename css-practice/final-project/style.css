@@ -66,6 +66,30 @@ p {
   color: #3040C4;
 }
 
+.section {
+  padding: 80px 0;
+}
+
+.section-category {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.section-title {
+  margin-bottom: 24px;
+  font-size: 34px;
+  line-height: 1.0588235294;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #2B292D;
+}
+
+
+
 /* Landing */
 .landing {
   background-color: #FDDED8;
@@ -130,88 +154,57 @@ p {
 }
 
 /* Program */
-.program {
-  padding: 80px 0;
-}
-
-.category {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: #009B4D;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.program-title {
-  margin-bottom: 24px;
-  font-size: 34px;
-  line-height: 1.0588235294;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: #2B292D;
-}
-
-.program-desc {
+.program .row:first-child {
   margin-bottom: 32px;
 }
 
-.program-content-1,
-.program-content-2,
-.program-content-3 {
-  text-align: center;
-  border-radius: 8px;
-  border: 1px solid #000;
-  width: 100%;
-  padding-bottom: 32px;
-  margin-bottom: 20px;
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1); */
-
+.program .section-category {
+  color: #009B4D;
 }
 
-.program-content-3 {
+.program .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child {
   margin-bottom: 0;
 }
 
-.program-image {
-  width: 100%;
-  height: 195px;
+.program-card {
   display: block;
-  margin-bottom: 16px;
-  margin-top: 24px;
+  padding: 24px 0 32px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  transition: background-color 300ms ease-in-out,
+    box-shadow 300ms ease-in-out;
 }
 
-.program-content-1 .program-image {
-  background-image: url('./assets/img-fulltime-campus.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+.program-card:hover {
+  background-color: #3141C5;
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
 }
 
-.program-content-2 .program-image {
-  background-image: url('./assets/img-fulltime-remote.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+.program-card:hover strong {
+  color: #fff;
 }
 
-.program-content-3 .program-image {
-  background-image: url('./assets/img-parttime-flex.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+.program-card img {
+  display: block;
+  margin: 0 auto 16px;
+  width: auto;
+  height: 195px;
 }
 
-.program-name {
+.program-card strong {
   font-size: 18px;
   line-height: 1.3333333333;
   font-weight: 700;
   letter-spacing:-0.02em;
   color: #2B292D;
+  transition: color 500ms ease-in-out;
 }
-
-
 
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
@@ -244,6 +237,22 @@ p {
     line-height: 1.5555555556;
   }
 
+  .section {
+    padding-bottom: 96px;
+  }
+
+  .section-category {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.0909090909;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+    font-size: 56px;
+    line-height: 1;
+  }
+
   .landing .button-group .fill-button:first-child {
     margin-right: 16px;
   }
@@ -260,39 +269,20 @@ p {
 
   /* Program */
   .program {
-    padding-bottom: 96px;
-  }
-
-  .program-header {
     text-align: center;
   }
 
-  .category {
-    font-size: 22px;
-    line-height: 1.0909090909;
-    margin-bottom: 16px;
-  }
-  
-  .program-title {
-    margin-bottom: 32px;
-    font-size: 56px;
-    line-height: 1;
+  .program .row:first-child {
+    margin-bottom: 72px;
   }
 
-  .program-desc {
-    width: 770px;
-    margin: 0 auto 72px;
-  }
-
-  .program-image {
+  .program-card img {
     margin-bottom: 24px;
   }
 
-  .program-content-2 {
-    background-color: #3141C5;
-  }
-  .program-content-2 .program-name {
-    color: #fff;
+  .program-card strong{
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
