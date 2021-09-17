@@ -246,8 +246,83 @@ p {
   display: none;
 }
 
+/* Subscription */
+.subscription {
+  background-color: #F2F8FA;
+  padding: 65px 0 40px;
+  text-align: center;
+}
 
+.subscription .col-5 {
+  margin-bottom: 41px;
+}
 
+.subscription img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 190px;
+}
+
+.subscription-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #2B292D;
+}
+
+.subscription-desc {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #2B292D;
+}
+
+.subscription input, 
+.subscription button {
+  width: 100%;
+  margin-bottom: 8px;
+  border: none;
+  height: 48px;
+}
+
+.subscription input {
+  padding: 0 16px;
+}
+
+.subscription-info {
+  font-size: 13px;
+  line-height: 1.5384615385;
+  color: #7B7B7E;
+}
+
+.subscription-info a {
+  font-family: "Work Sans";
+  color: revert;
+  text-decoration: revert;
+}
+
+/* Footer */
+.footer {
+  padding: 24px 0;
+}
+.footer span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: -0.01em;
+  color: #807F81;
+}
+
+.footer span:first-child {
+  margin-bottom: 8px;
+}
+
+.footer span:nth-child(2) {
+  margin-bottom: 8px;
+}
 
 
 /* >= 768px (Desktop) */
@@ -330,13 +405,27 @@ p {
   }
 
   /* Cirriculum */
-
   .cirriculum .desktop {
     display: inline-flex;
   }
 
   .cirriculum .mobile {
     display: none;
+  }
+
+  .cirriculum .row:first-child {
+    margin-bottom: 24px;
+  }
+
+  .cirriculum .row:last-child .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  .cirriculum-img {
+    display: block;
+    width: 100%;
+    max-width: 425px;
+    height: auto;
   }
 
   .cirriculum-detail {
@@ -354,12 +443,73 @@ p {
     margin-bottom: 66px;
   }
 
-  .cirriculum-img {
-    display: block;
-    width: 425px;
-    height: auto;
+  /* Subscription */
+  .subscription {
+    padding: 80px 0;
   }
 
+  .subscription img {
+    width: auto;
+    height: 285px;
+    margin-left: 0;
+    padding: 8px 0;
+  }  
+
+  .subscription .col-md-5 {
+    margin-bottom: 0;
+  }
+
+  .subscription .col-md-7 {
+    text-align: left;
+  }
+
+  .subscription-title {
+    font-size: 40px;
+  }
+
+  .subscription-desc {
+    font-size: 22px;
+    line-height: 1.4545454545;
+  }
+
+  .subscription form {
+    display: flex;
+    margin-bottom: 4px;
+  }
+
+  .subscription input, 
+  .subscription button {
+    margin-bottom: 0;
+  }
+
+  .subscription button{
+    width: 240px;
+    padding: 0;
+    height: auto;
+    margin-left: 8px;
+  }
+
+  .subscription-info a {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 16px 0;
+  }
+
+  .footer span {
+    display: inline-block;
+  }
+
+  .footer span:first-child {
+    margin-right: 16px;
+  }
+
+  .footer span:nth-child(2) {
+    margin-right: 16px;
+  }
 }
 
 /* Custom Grid System - Fix container width */
