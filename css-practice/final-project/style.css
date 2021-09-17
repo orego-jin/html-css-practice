@@ -89,7 +89,6 @@ p {
 }
 
 
-
 /* Landing */
 .landing {
   background-color: #FDDED8;
@@ -206,6 +205,51 @@ p {
   transition: color 500ms ease-in-out;
 }
 
+/* Cirriculum */
+.cirriculum .row:first-child {
+  margin-bottom: 48px;
+}
+
+.cirriculum .row:last-child .col-12:first-child {
+  margin-bottom: 62px;
+}
+
+.cirriculum .section-category {
+  color: #0189D1;
+}
+
+.cirriculum .section-desc {
+  margin-bottom: 32px;
+}
+
+.cirriculum-img {
+  display: none;
+}
+
+.cirriculum .fill-button {
+  margin-left: 3px;
+  /* margin-bottom: 48px; */
+}
+
+.cirriculum-detail {
+  font-size: 15px;
+  line-height: 1.4666666667;
+  letter-spacing: -0.01em;
+  color: #2B292D;
+}
+
+.cirriculum-detail strong {
+  font-weight: 700;
+}
+
+.cirriculum .desktop {
+  display: none;
+}
+
+
+
+
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -284,6 +328,38 @@ p {
     font-size: 20px;
     line-height: 1.2;
   }
+
+  /* Cirriculum */
+
+  .cirriculum .desktop {
+    display: inline-flex;
+  }
+
+  .cirriculum .mobile {
+    display: none;
+  }
+
+  .cirriculum-detail {
+    font-size: 18px;
+    line-height: 1.4444444444;
+    letter-spacing: -0.01em;
+  }
+
+  .cirriculum .section-desc {
+    margin-bottom: 72px;
+  }
+
+  .cirriculum .fill-button {
+    margin-left: 0;
+    margin-bottom: 66px;
+  }
+
+  .cirriculum-img {
+    display: block;
+    width: 425px;
+    height: auto;
+  }
+
 }
 
 /* Custom Grid System - Fix container width */
