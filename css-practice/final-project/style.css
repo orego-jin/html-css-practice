@@ -52,6 +52,7 @@ p {
   align-items: center;
   width: 140px;
   height: 48px;
+  border: none;
   border-radius: 2px;
   font-size: 15px;
   line-height: 1.6;
@@ -249,15 +250,16 @@ p {
 /* Subscription */
 .subscription {
   background-color: #F2F8FA;
-  padding: 65px 0 40px;
+  padding: 40px 0;
   text-align: center;
 }
 
-.subscription .col-5 {
-  margin-bottom: 41px;
+.subscription-image {
+  padding: 25px 0;
+  margin-bottom: 16px;
 }
 
-.subscription img {
+.subscription-image img {
   display: block;
   margin: 0 auto;
   width: auto;
@@ -274,34 +276,37 @@ p {
 
 .subscription-desc {
   margin-bottom: 24px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-  color: #2B292D;
 }
 
-.subscription input, 
-.subscription button {
-  width: 100%;
+.subscription .input-group {
   margin-bottom: 8px;
-  border: none;
-  height: 48px;
 }
 
-.subscription input {
+.subscription .input-group input{
+  margin-bottom: 8px;
   padding: 0 16px;
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
 }
 
-.subscription-info {
+.subscription .input-group .fill-button {
+  width: 100%;
+}
+
+.subscription .form-notice {
   font-size: 13px;
   line-height: 1.5384615385;
+  letter-spacing: 0;
   color: #7B7B7E;
 }
 
-.subscription-info a {
+.subscription .form-notice a {
   font-family: "Work Sans";
-  color: revert;
-  text-decoration: revert;
+  color: #3040C4;
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -445,56 +450,49 @@ p {
 
   /* Subscription */
   .subscription {
+    text-align: left;
     padding: 80px 0;
   }
 
-  .subscription img {
-    width: auto;
-    height: 285px;
-    margin-left: 0;
+  .subscription-image {
     padding: 8px 0;
-  }  
-
-  .subscription .col-md-5 {
     margin-bottom: 0;
   }
 
-  .subscription .col-md-7 {
-    text-align: left;
-  }
+  .subscription-image img {
+    height: 285px;
+    margin-left: 0;
+  }  
 
   .subscription-title {
     font-size: 40px;
   }
 
-  .subscription-desc {
-    font-size: 22px;
-    line-height: 1.4545454545;
-  }
-
-  .subscription form {
+  .subscription .input-group {
     display: flex;
+    align-items: center;
     margin-bottom: 4px;
   }
 
-  .subscription input, 
-  .subscription button {
+  .subscription .input-group input {
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.3333333333;
     margin-bottom: 0;
   }
 
-  .subscription button{
-    width: 240px;
-    padding: 0;
-    height: auto;
+  .subscription .input-group .fill-button {
+    flex-shrink: 0;
+    width: 160px;
     margin-left: 8px;
   }
 
-  .subscription-info a {
+  .subscription .form-notice {
     font-size: 14px;
     line-height: 1.7142857143;
   }
 
-  /* Footer */
+  /* Footer */ 
   .footer {
     padding: 16px 0;
   }
